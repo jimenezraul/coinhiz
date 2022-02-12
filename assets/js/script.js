@@ -232,27 +232,30 @@ function createFavEl() {
         var star = document.createElement("img");
         star.classList = "star absolute";
         star.src = "./assets/img/favorite.png";
-        var h3 = document.createElement("h3");
-        h3.classList = "border-b fw-bold pb-2 font-bold";
-        h3.textContent = cryptoList.data[j].name;
+        var h1 = document.createElement("h1");
+        h1.classList = "text-xl font-bold";
+        h1.textContent = cryptoList.data[j].name;
         var row = document.createElement("div");
-        row.classList = "flex flex-row pt-3 px-3";
+        row.classList = "flex flex-wrap pt-3 px-3";
         var items = document.createElement("div");
-        items.classList = "px-1 border-r items w-6/12 lg:w-3/12";
+        items.classList = "px-1 items w-6/12 lg:w-3/12";
         var p = document.createElement("p");
         p.textContent = "Mined Supply: " + cryptoList.data[j].csupply;
+        p.classList = "text-base pb-2";
         items.append(p);
         row.append(items);
         var items = document.createElement("div");
-        items.classList = "px-1 border-r items w-6/12 lg:w-3/12";
+        items.classList = "px-1 items w-6/12 lg:w-3/12";
         var p = document.createElement("p");
         p.textContent = "Total Supply: " + cryptoList.data[j].tsupply;
+        p.classList = "text-base pb-2";
         items.append(p);
         row.append(items);
         var items = document.createElement("div");
-        items.classList = "px-1 border-r items w-6/12 lg:w-3/12";
+        items.classList = "px-1 items w-6/12 lg:w-3/12";
         var p = document.createElement("p");
         p.textContent = "Price: $" + cryptoList.data[j].price_usd;
+        p.classList = "text-base pb-2";
         items.append(p);
         row.append(items);
         var items = document.createElement("div");
@@ -264,9 +267,10 @@ function createFavEl() {
             (cryptoList.data[j].csupply / cryptoList.data[j].msupply) * 100
           ) +
           "%";
+          p.classList = "text-base pb-2";
         items.append(p);
         row.append(items);
-        cryptoDiv.append(star, h3, row);
+        cryptoDiv.append(star, h1, row);
         document.getElementById("fav-card").append(cryptoDiv);
       }
     }
