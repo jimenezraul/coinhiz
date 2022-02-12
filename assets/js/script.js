@@ -24,7 +24,7 @@ var apiUrl = `https://api.coinpaprika.com/v1/coins/${coinsToSearchTweetsFor}/twi
 function createCryptoEl(response) {
   var cryptoDiv = document.createElement("div");
   var topDiv = document.createElement("div");
-  cryptoDiv.classList = "crypto-div my-3 border rounded shadow p-3 relative";
+  cryptoDiv.classList = "bg-white crypto-div my-3 border rounded shadow p-3 relative";
   var star = document.createElement("i");
   star.classList = "fa fa-star text-3xl mx-2 focus:outline-none";
   star.setAttribute("id", response.name);
@@ -108,7 +108,7 @@ var getCrypto = function () {
 
   var createTopGainerEl = function (response) {
     var cryptoHeadline = document.createElement("h5");
-    cryptoHeadline.classList = "pt-5 border-t";
+    cryptoHeadline.classList = "pt-5";
     cryptoHeadline.textContent = response.description;
 
     var cryptoImageLink = document.createElement("img");
@@ -117,7 +117,10 @@ var getCrypto = function () {
 
     var provider = document.createElement("p");
     provider.textContent = response.source;
-    cryptoNews.append(cryptoHeadline, provider, cryptoImageLink);
+    var newDiv = document.createElement("div");
+    newDiv.classList = "p-5 mb-3 bg-white border rounded shadow";
+    newDiv.append(cryptoImageLink, cryptoHeadline, provider)
+    cryptoNews.append(newDiv);
   };
 
   const cryptoPulse = {
