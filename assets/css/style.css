@@ -82,13 +82,6 @@
     background-color: black;
 }
 
-.crypto-div p {
-    font-size: 15px;
-    background-color: rgb(255, 255, 255);
-    columns: auto;
-    width: fit-content;
-    width: 100%;
-}
 
 .columns {
     flex-direction: column;
@@ -477,25 +470,4 @@ h2 {
 
 p {
     color: black;
-}
-/*Media query for mobile phones and smaller */
-@media screen and (max-width: 770px) {
-    .crypto-div p {
-        font-size: 10px;
-        background-color: rgb(255, 255, 255);
-        columns: auto;
-        width: fit-content;
-        width: 100%;
-    }
-    .cryptoheader {
-        background-color: white;
-        width: 90%;
-        font-size: 30px;
-        
-    }
-
-    .news {
-       display: none;
-    }
-    
 }

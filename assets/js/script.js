@@ -46,23 +46,27 @@ function createCryptoEl(response) {
   items.classList = "px-1 items w-6/12 lg:w-3/12";
   var p = document.createElement("p");
   p.textContent = "Mined Supply: " + response.csupply;
+  p.classList = "text-lg";
   items.append(p);
   row.append(items);
   var items = document.createElement("div");
   items.classList = "px-1 items w-6/12 lg:w-3/12";
   var p = document.createElement("p");
   p.textContent = "Total Supply: " + response.tsupply;
+  p.classList = "text-lg";
   items.append(p);
   row.append(items);
   var items = document.createElement("div");
   items.classList = "px-1 items w-6/12 lg:w-3/12";
   var p = document.createElement("p");
   p.textContent = "Price: $" + response.price_usd;
+  p.classList = "text-lg";
   items.append(p);
   row.append(items);
   var items = document.createElement("div");
   items.classList = "px-1 items w-6/12 lg:w-3/12";
   var p = document.createElement("p");
+  p.classList = "text-lg";
   p.textContent =
     "Percent Mined: " +
     parseInt((response.csupply / response.msupply) * 100) +
@@ -71,7 +75,7 @@ function createCryptoEl(response) {
   btnDiv.classList = "mt-3 flex flex-row justify-end";
   var btn = document.createElement("button");
   btn.classList = "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded";
-  btn.textContent = response.name + "Chart";
+  btn.textContent = response.name + " Chart";
   btn.setAttribute("symbol", response.symbol);
   btn.addEventListener("click", modalHandler);
   btnDiv.append(btn);
@@ -177,7 +181,7 @@ var getCrypto = function () {
         var div = document.createElement("div");
         div.classList = "flex text-center";
         var div2 = document.createElement("div");
-        div2.classList = "w-full pl-5 pt-5";
+        div2.classList = "w-full pl-5 pt-5 pb-5";
         var div3 = document.createElement("div");
         div3.classList =
           "bg-gray-200 rounded p-5 w-40 border-4 border-gray-400 shadow-lg";
