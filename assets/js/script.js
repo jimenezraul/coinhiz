@@ -46,27 +46,27 @@ function createCryptoEl(response) {
   items.classList = "px-1 items w-6/12 lg:w-3/12";
   var p = document.createElement("p");
   p.textContent = "Mined Supply: " + response.csupply;
-  p.classList = "text-lg";
+  p.classList = "text-base pb-2";
   items.append(p);
   row.append(items);
   var items = document.createElement("div");
   items.classList = "px-1 items w-6/12 lg:w-3/12";
   var p = document.createElement("p");
   p.textContent = "Total Supply: " + response.tsupply;
-  p.classList = "text-lg";
+  p.classList = "text-base pb-2";
   items.append(p);
   row.append(items);
   var items = document.createElement("div");
   items.classList = "px-1 items w-6/12 lg:w-3/12";
   var p = document.createElement("p");
   p.textContent = "Price: $" + response.price_usd;
-  p.classList = "text-lg";
+  p.classList = "text-base pb-2";
   items.append(p);
   row.append(items);
   var items = document.createElement("div");
   items.classList = "px-1 items w-6/12 lg:w-3/12";
   var p = document.createElement("p");
-  p.classList = "text-lg";
+  p.classList = "text-base pb-2";
   p.textContent =
     "Percent Mined: " +
     parseInt((response.csupply / response.msupply) * 100) +
