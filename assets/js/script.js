@@ -67,9 +67,17 @@ function createCryptoEl(response) {
     "Percent Mined: " +
     parseInt((response.csupply / response.msupply) * 100) +
     "%";
+  var btnDiv = document.createElement("div");
+  btnDiv.classList = "mt-3 flex flex-row justify-end";
+  var btn = document.createElement("button");
+  btn.classList = "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded";
+  btn.textContent = response.name + "Chart";
+  btn.setAttribute("symbol", response.symbol);
+  btn.addEventListener("click", modalHandler);
+  btnDiv.append(btn);
   items.append(p);
   row.append(items);
-  cryptoDiv.append(topDiv, row);
+  cryptoDiv.append(topDiv, row, btnDiv);
   crytposHere.append(cryptoDiv);
 }
 
