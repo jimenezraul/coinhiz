@@ -12,9 +12,9 @@
   <title>COINHIZ | HOME</title>
 </head>
 
-<body class="bg-green-300">
+<body id="top">
   <!-- Nabvar -->
-  <nav class="bg-green-800 text-gray-100">
+  <nav class="bg-gray-700 text-gray-100">
     <div class="container mx-auto">
       <div class="flex flex-wrap justify-between">
         <div class="flex w-full lg:w-1/2 justify-center lg:justify-start">
@@ -30,84 +30,86 @@
   </nav>
   <!-- End of Nabvar -->
   <!-- Hero -->
-  <!-- <section class="hero flex justify-center content-center text-gray-100">
+  <section class="hero flex justify-center content-center text-gray-100">
     <div class="flex justify-end items-center w-1/2">
       <h1 class="hero-title border-r-2 py-7 pr-7 align-middle font-bold">CoinHiz</h1>
     </div>
     <div class="flex justify-start items-center w-1/2 text-xl">
       <h2 class="text-gray-100 hero-h2 pl-7">HOME</h2>
     </div>
-  </section> -->
+  </section>
   <!-- End Hero -->
-  <h3 class="lg:flex text-2xl ml-2"> Top Gainers</h3>
-  
-  <div class=" top-gainers md:flex lg:flex flex-row top-row-gainers ">
+  <h3 class="text-2xl indent-7 py-3 font-semibold border-b-2"> Top Gainers</h3>
+  <div id="top-gainers" class="flex overflow-scroll">
+  </div>
   </div>
   <div class="top-gainers-container">
-  <div class="media-scroller-container">
-    <div class="left-button-container">
-      <p class="left-arrow"><</p>
-    </div>
-    <div class="media-scroller" id="media-scroller"></div>
-    <div class="right-button-container">
-      <p class="right-arrow">></p>
-    </div>
-  </div>
-  </div>
-<!-- The Modal -->
-<div id="myModal" class="modal">
-  <!-- Modal content -->
-  <div class="modal-content">
-    <div class="cards">
-      <span class="close">&times;</span>
-    <div class="symbol">
-      <div class="asset-info">
-        <div class="title">
-          <h1></h1>
-        </div>
-        <div class="details">
-          <h2 class="asset-price" id="Price"></h2>
-        </div>
+    <div class="media-scroller-container">
+      <div class="left-button-container">
+        <p class="left-arrow">
+          < </p>
       </div>
-      <canvas id="chart"></canvas>
-    </div>
-    </div>
-  </div>
-</div>
-<!--Main class to hold main day data-->
-<main class="break-after-auto container-flud h-screen bg-green-500">
-  <!-- bg-gradient-to-b from-green-200 to-green-500 -->
-  <section class=" md:flex lg:flex flex-row">
-    <div class="flex-wrap">
-      <!--Holds list and form data-->
-      <div class="news bg-gradient-to-b from-green-500 to-green-300">
-        
-         <h2>Crypto News! </h2>
-        <div class= "w-50 crypto-news" id="cityListId"> </div>
+      <div class="media-scroller" id="media-scroller"></div>
+      <div class="right-button-container">
+        <p class="right-arrow">></p>
       </div>
     </div>
-    <div id="md:flex lg:flex"
-      class="coins-holder  bg-green-400">
-      <div class="input-group mb-6"><h3 class="ml-5 mt-3">Filter By Crypto Name</h3>
-        <input name="input-search" id="search" onkeyup="searchCrypto()" placeholder="Coin Name" type="text" autofocus="true" class="form-control ml-5"/>
-      </div>  
-      <div class="cryptos-here bg-green-400" id=""></div>
+  </div>
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="cards">
+        <span class="close">&times;</span>
+        <div class="symbol">
+          <div class="asset-info">
+            <div class="title">
+              <h1></h1>
+            </div>
+            <div class="details">
+              <h2 class="asset-price" id="Price"></h2>
+            </div>
+          </div>
+          <canvas id="chart"></canvas>
+        </div>
+      </div>
     </div>
-  </section>
-  <footer class="header md:flex lg:flex flex-row bg-green-600">
-    <h1>
-       <a href="/">CoinHiz</a>
-    </h1>
-      <nav class=" navigation  ">
-        <!--Unordered list element-->
-      <p class="text-xl">By Chris Waters, </br>Raul Jimenez, </br>Jonathan McDonnell, </br>Garrett Hilberling, </br>Douglas Knowles, & </br>Brady Stafford</p>
-      </nav>
-    </footer>
-</main>
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
-<script src="./assets/js/script.js"></script>
+  </div>
+  <!--Main class to hold main day data-->
+
+  <div class="flex">
+    <div class="p-5 crypto-news none md:flex md:flex-col md:w-4/12 lg:w-3/12">
+
+    </div>
+    <div class="w-full md:w-8/12 lg:w-9/12">
+      <div class="input-group mb-6">
+        <div class="w-full">
+          <div class="mb-4 px-5">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+              Filter By Crypto Name
+            </label>
+            <input
+              class="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              name="input-search" id="search" onkeyup="searchCrypto()" placeholder="Search..." type="text"
+              autofocus="true" class="form-control ml-5" />
+          </div>
+        </div>
+        <div class="cryptos-here w-full px-5">
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="bg-gray-600">
+    <div class="w-full flex justify-center">
+      <p class="text-xl text-gray-100">By Chris Waters, Raul Jimenez, Jonathan McDonnell, Garrett Hilberling,
+        Douglas Knowles, & Brady Stafford</p>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+  <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
