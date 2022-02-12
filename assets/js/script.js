@@ -43,7 +43,7 @@ function createCryptoEl(response) {
   var row = document.createElement("div");
   row.classList = "flex flex-wrap pt-3 px-3";
   var items = document.createElement("div");
-  items.classList = "px-3 items w-6/12 lg:w-3/12";
+  items.classList = "px-1 items w-6/12 lg:w-3/12";
   var p = document.createElement("p");
   p.textContent = "Mined Supply: " + response.csupply;
   items.append(p);
