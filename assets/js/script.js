@@ -85,6 +85,7 @@ function createCryptoEl(response) {
   crytposHere.append(cryptoDiv);
 }
 
+// Get Crypto Data
 var getCrypto = function () {
   const settings = {
     async: true,
@@ -117,7 +118,7 @@ var getCrypto = function () {
       }
     }
   });
-
+  // create top gainers
   var createTopGainerEl = function (response) {
     var cryptoHeadline = document.createElement("h5");
     cryptoHeadline.classList = "pt-5";
@@ -208,6 +209,7 @@ var getCrypto = function () {
   });
 };
 
+// Search filter
 function searchCrypto() {
   var input = document.getElementById("search");
   var divs = document.getElementsByClassName("crypto-div");
@@ -223,6 +225,7 @@ function searchCrypto() {
   }
 }
 
+//Create Favorite Coins Elements
 function createFavEl() {
   for (var i = 0; i < storeCryptoArray.length; i++) {
     for (var j = 0; j < cryptoList.data.length; j++) {
@@ -277,10 +280,12 @@ function createFavEl() {
   }
 }
 
+//save favorite coins to local storage
 function saveCrypto() {
   localStorage.setItem("fav", JSON.stringify(storeCryptoArray));
 }
 
+// add and remove favorite coins from array
 function storeCrypto(e) {
   e.preventDefault();
   var id = e.target.getAttribute("id");
@@ -300,6 +305,7 @@ function storeCrypto(e) {
   saveCrypto();
 }
 
+// get favorite coins from local storage and set global variable
 function onLoad() {
   var fav = JSON.parse(localStorage.getItem("fav"));
   if (!fav) {
@@ -310,6 +316,7 @@ function onLoad() {
 }
 onLoad();
 
+// check if coin is in favorite array
 function isCryptoExists(symbol) {
   for (var i = 0; i < storeCryptoArray.length; i++) {
     if (storeCryptoArray[i].id === symbol) {
@@ -319,6 +326,7 @@ function isCryptoExists(symbol) {
   return false;
 }
 
+// reset the modal elements
 function resetModal() {
   modal.innerHTML = "";
   var modalContent = document.createElement("div");
@@ -351,6 +359,7 @@ function resetModal() {
   modal.append(modalContent);
 }
 
+// Modal chart
 function getChart(symbol) {
   var url = `https://min-api.cryptocompare.com/data/v2/histominute?fsym=${symbol}&tsym=USD&limit=119&api_key=0646cc7b8a4d4b54926c74e0b20253b57fd4ee406df79b3d57d5439874960146`;
   fetch(url)
@@ -448,6 +457,7 @@ function getChart(symbol) {
     });
 }
 
+// Modal handler
 function modalHandler() {
   modal.style.display = "block";
   var symbol = this.getAttribute("symbol");
@@ -659,6 +669,7 @@ if (history.scrollRestoration) {
   };
 }
 
+// onLoad scroll to top
 $(document).ready(function () {
   $("html, body").animate({
     scrollTop: $("#top"),

@@ -103,12 +103,12 @@ function createElement(p) {
   var div2 = document.createElement("div");
   var div3 = document.createElement("div");
   div.classList.add(
-    "d-flex",
-    "align-items-center",
-    "col-11",
-    "col-md-10",
-    "col-lg-8",
-    "col-xl-6",
+    "flex",
+    "items-center",
+    "w-11/12",
+    "md:w-10/12",
+    "lg:w-8/12",
+    "xl:w-6/12",
     "rounded",
     "shadow",
     "mt-4",
@@ -124,14 +124,14 @@ function createElement(p) {
   if (place.photo) {
     img.setAttribute("src", place.photo);
   }
-  a.classList.add("btn", "btn-primary", "btn-block", "mt-2");
+  a.classList = "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-2";
   a.setAttribute("href", place.url);
   a.setAttribute("target", "_blank");
   a.textContent = "View on Google Maps";
-  img.classList.add("img-fluid", "rounded");
+  img.classList.add("object-contain", "rounded", "w-full");
   div2.classList.add("col-3");
   div2.appendChild(img);
-  div3.setAttribute("class", "card-body");
+  div3.setAttribute("class", "text-center w-full card-body flex flex-col items-center");
   div.appendChild(div2);
   div3.append(h2, p1, a);
   div.appendChild(div3);
