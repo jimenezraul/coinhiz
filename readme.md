@@ -1,16 +1,19 @@
 # Coinhiz
-House for Crypto Coins showing a coin's market supply vs how many coins have been mined.  How fast coins are being mined and the price index for each coin.
 
-## Built off of HTML, CSS, Javascript, JQuery
-Built off HTML, CSS, Javascript, Jquery and Tailwinds for CSS.
+## Description
+Coinhiz is a Crypto currency application the gives users information, current price, and a chart with historical price of the coin.
+Give you the ability to save your favorite coins and also get the locations of any Bitcoin atm around you or in any city.
 
-### Live Link
-https://waters000.github.io/coinhiz/
+## Technologies Used
+- HTML
+- CSS
+- JavaScript
+- WebAPI
+- ServerSide API
+- TailwindCSS
 
-#### Who is this for?
-Anyone interested in the fascinating world of Crypto can use this as a guide to find the top coins, how many are in productions and how many are still left to be mined?
+### Deployment
+Deployed application: [Live URL](https://jimenezraul.github.io/coinhiz/)
 
-##### How to use?
-Find the top coin gainer for the past 24 hours, latest twitter feed postings, info with chart on top 100 coins.  
-
-![Screenshot 2022-02-10 140025](https://user-images.githubusercontent.com/94644749/153478151-a308b75a-92ce-47db-a80e-01d837f19280.png)
+## Screenshot
+![Screenshot](./assets/img/coinhiz.png)
