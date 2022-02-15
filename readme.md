@@ -17,3 +17,11 @@ Deployed application: [Live URL](https://jimenezraul.github.io/coinhiz/)
 
 ## Screenshot
 ![Screenshot](./assets/img/coinhiz.png)
+
+## Credits
+- [Raul Jimenez](https://github.com/jimenezraul)
+- [Chris Waters](https://github.com/Waters000)
+- [Garrett Hilberling](https://github.com/garretthilberling)
+- [Jonathan McDonnell](https://github.com/Johnnyboy7781)
+- [Dknowles44](https://github.com/Dknowles44)
+- [Brady Stafford](https://github.com/BradyStafford)
