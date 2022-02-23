@@ -136,7 +136,7 @@ function createElement(p) {
     img.setAttribute("src", place.photo);
   }
   a.classList =
-    "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-2";
+    "bg-blue-500 hover:bg-blue-700 text-white text-sm font-bold py-2 px-4 rounded mt-2";
   a.setAttribute("href", place.url);
   a.setAttribute("target", "_blank");
   a.textContent = "View on Google Maps";
