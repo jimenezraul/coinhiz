@@ -59,7 +59,7 @@ function initMap() {
   map.on("click", (event) => {
     // If the user clicked on one of your markers, get its information.
     const features = map.queryRenderedFeatures(event.point, {
-      layers: ["north-america"], // replace with your layer name
+      layers: ["north-america-232ntq"], // replace with your layer name
     });
     if (!features.length) {
       return;
