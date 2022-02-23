@@ -85,7 +85,7 @@ function initMap() {
   });
 
   function getMarkers() {
-    var features = map.queryRenderedFeatures({ layers: ["north-america"] });
+    var features = map.queryRenderedFeatures({ layers: ["north-america-232ntq"] });
     atmInfoEl.innerHTML = "";
     features.forEach((feature) => {
       createElement(feature.properties);
