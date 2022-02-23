@@ -51,7 +51,7 @@ function initMap() {
   loading.style.display = "none";
   var map = new mapboxgl.Map({
     container: "map",
-    style: "mapbox://styles/jimenezraul/ckzxacuvz001514levaifjas2",
+    style: "mapbox://styles/jimenezraul/ckzz3p9bh000115o8j1nmffdy",
     center: [latlng.lng, latlng.lat],
     zoom: 10,
   });
