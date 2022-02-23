@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
   <link rel="stylesheet" href="./assets/css/fav-style.css">
@@ -50,17 +52,20 @@
         <!-- Form -->
         <form class="py-5 w-11/12 sm:w-10/12 md:w-6/12 lg:4/12">
           <div class="flex justify-center">
-            <input id="city" type="text" class="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Enter a City"
-              aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <input id="city" type="text"
+              class="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              placeholder="Enter a City" aria-label="Recipient's username" aria-describedby="basic-addon2">
             <div>
-              <button id="btc-atm-search" class="flex bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Search<img class="img-search"
-                  src="./assets/img/bitcoin.png" alt=""></button>
+              <button id="btc-atm-search"
+                class="flex bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Search<img
+                  class="img-search" src="./assets/img/bitcoin.png" alt=""></button>
             </div>
           </div>
         </form>
         <!-- End of Form -->
         <p>or</p>
-        <button id="my-location" class="mt-5 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"><img class="gps" src="./assets/img/gps.png" alt="">
+        <button id="my-location" class="flex items-center mt-5 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"><img
+            class="gps" src="./assets/img/gps.png" alt="">
           location <span id="loading" role="status">
             <div class="spinner-grow inline-block w-5 h-5 bg-current rounded-full opacity-0" role="status">
               <span class="visually-hidden">Loading...</span>
@@ -87,11 +92,12 @@
     </div>
   </footer>
   <!-- End footer-->
-  
+
   <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-  <script
+  <!-- <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAY0aUhmoBFuEw8NhIcYCP9CsR5qj7wA6o&callback=initMap&libraries=places&v=weekly"
-    async></script>
+    async></script> -->
+   
   <script src="./assets/js/bitcoin-atm.js"></script>
 </body>
 
