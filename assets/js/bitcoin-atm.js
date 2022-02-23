@@ -12,7 +12,7 @@ var message = document.querySelector("#message");
 var loading = document.querySelector("#loading");
 var apiKey = "2c55cf825b3d6637f09bec8a5d37fed0";
 mapboxgl.accessToken =
-  "sk.eyJ1IjoiamltZW5lenJhdWwiLCJhIjoiY2t6ejF0ZTR0MDYwZTNqcGE2ZHRzbXV5ZSJ9.6XDWP1pR9idnb_Vm9hgOGw";
+  "pk.eyJ1IjoiamltZW5lenJhdWwiLCJhIjoiY2t6ejIwM3JjMDV6bDNjdGZhbjJwcWl6NSJ9.QoZKFwTtk0M1-059mOfyEA";
 
 // Orlando location
 var latlng = {
