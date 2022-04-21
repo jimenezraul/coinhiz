@@ -49,12 +49,7 @@ cd coinhiz
 
 ## Lunch the application
 
-Install live server on VS Code:
-
-```
-npm install -g live-server
-live-server
-```
+Install VS code Live Server plugin and lunch the appication by right click on the index.html and selection open with Live Server.
 
 ## Contributors
 
