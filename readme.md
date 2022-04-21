@@ -18,7 +18,7 @@ This application is built with HTML5, CSS3, JavaScript, jQuery, Tailwind CSS, an
   - [Tools & Resources](#tools--resources)
   - [Screenshot](#screenshot)
   - [Installation](#installation)
-  - [Lunch the application](#lunch-the-application)
+  - [Start application](#start-application)
   - [Contributors](#contributors)
   - [Contact](#contact)
 
@@ -47,9 +47,9 @@ git clone git@github.com:jimenezraul/coinhiz.git
 cd coinhiz
 ```
 
-## Lunch the application
+## Start application
 
-Install VS code Live Server plugin and lunch the appication by right click on the index.html and selection open with Live Server.
+Install VS code Live Server plugin and start the appication by right click on the index.html and selection open with Live Server.
 
 ## Contributors
 
